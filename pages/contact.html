@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Bár - Rendelés</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/logo-icon.jpg" alt="Burger Bár Logo">
+                Burger Bár
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Kezdőlap</a></li>
+                <li><a href="menu.html">Étlap</a></li>
+                <li><a href="builder.html">Burger Építő</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html" class="active">Rendelés & Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Rendelés Leadása</h1>
+            <p>Töltsd ki az űrlapot a rendeléshez!</p>
+
+            <form id="orderForm" novalidate>
+                <!-- 1. Text Input -->
+                <div class="form-group">
+                    <label for="name">Teljes Név:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- 2. Email Input -->
+                <div class="form-group">
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- 3. Tel Input -->
+                <div class="form-group">
+                    <label for="phone">Telefonszám:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="06301234567" required>
+                    <span class="error-message" id="phoneError"></span>
+                </div>
+
+                <!-- 4. Number Input -->
+                <div class="form-group">
+                    <label for="quantity">Hány burgert szeretnél?</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                </div>
+
+                <!-- 5. Select Input -->
+                <div class="form-group">
+                    <label for="burgerType">Válassz burgert:</label>
+                    <select id="burgerType" name="burgerType" required>
+                        <option value="">-- Kérlek válassz --</option>
+                        <option value="classic">Klasszikus Sajtburger</option>
+                        <option value="bbq">BBQ Bacon Burger</option>
+                        <option value="chicken">Csirke Burger</option>
+                        <option value="vega">Vega Csoda</option>
+                    </select>
+                    <span class="error-message" id="burgerTypeError"></span>
+                </div>
+
+                <!-- 6. Radio Input -->
+                <div class="form-group">
+                    <label>Átvétel módja:</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="delivery" value="pickup" checked> Személyes átvétel</label>
+                        <label><input type="radio" name="delivery" value="delivery"> Házhozszállítás</label>
+                    </div>
+                </div>
+
+                <!-- 7. Date/Time Input -->
+                <div class="form-group">
+                    <label for="pickupTime">Átvétel ideje:</label>
+                    <input type="datetime-local" id="pickupTime" name="pickupTime" required>
+                    <span class="error-message" id="pickupTimeError"></span>
+                </div>
+
+                <!-- 8. Checkbox Input -->
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="terms" name="terms" required>
+                        Elfogadom az adatkezelési tájékoztatót.
+                    </label>
+                    <span class="error-message" id="termsError"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Rendelés Leadása</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Burger Bár. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/validation.js"></script>
+</body>
+
+</html>

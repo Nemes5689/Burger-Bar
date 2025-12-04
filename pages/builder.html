@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Bár - Burger Építő</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/logo-icon.jpg" alt="Burger Bár Logo">
+                Burger Bár
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Kezdőlap</a></li>
+                <li><a href="menu.html">Étlap</a></li>
+                <li><a href="builder.html" class="active">Burger Építő</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html">Rendelés & Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="builder-section">
+            <h1>Építsd meg álmaid burgerét!</h1>
+            <p>Válogasd össze a hozzávalókat, és mi elkészítjük neked.</p>
+
+            <div class="builder-container">
+                <div class="ingredients-panel">
+                    <h3>Hozzávalók</h3>
+                    <div class="ingredient-category">
+                        <h4>Húsok</h4>
+                        <button class="add-btn" data-name="Marhahús" data-price="1200" data-cal="250">Marhahús (+1200
+                            Ft)</button>
+                        <button class="add-btn" data-name="Csirke" data-price="1000" data-cal="180">Csirke (+1000
+                            Ft)</button>
+                        <button class="add-btn" data-name="Vega Pogácsa" data-price="1100" data-cal="150">Vega Pogácsa
+                            (+1100 Ft)</button>
+                    </div>
+                    <div class="ingredient-category">
+                        <h4>Sajtok</h4>
+                        <button class="add-btn" data-name="Cheddar" data-price="300" data-cal="80">Cheddar (+300
+                            Ft)</button>
+                        <button class="add-btn" data-name="Mozzarella" data-price="300" data-cal="70">Mozzarella (+300
+                            Ft)</button>
+                    </div>
+                    <div class="ingredient-category">
+                        <h4>Zöldségek</h4>
+                        <button class="add-btn" data-name="Saláta" data-price="100" data-cal="5">Saláta (+100
+                            Ft)</button>
+                        <button class="add-btn" data-name="Paradicsom" data-price="100" data-cal="10">Paradicsom (+100
+                            Ft)</button>
+                        <button class="add-btn" data-name="Hagyma" data-price="100" data-cal="15">Hagyma (+100
+                            Ft)</button>
+                    </div>
+                    <div class="ingredient-category">
+                        <h4>Szószok</h4>
+                        <button class="add-btn" data-name="BBQ" data-price="200" data-cal="50">BBQ (+200 Ft)</button>
+                        <button class="add-btn" data-name="Majonéz" data-price="200" data-cal="90">Majonéz (+200
+                            Ft)</button>
+                    </div>
+                </div>
+
+                <div class="burger-preview">
+                    <h3>A Te Burgered</h3>
+                    <ul id="selected-ingredients">
+                        <!-- Selected items go here -->
+                        <li>Alap Buci (500 Ft)</li>
+                    </ul>
+                    <div class="summary">
+                        <p>Összesen: <span id="total-price">500</span> Ft</p>
+                        <p>Kalória: <span id="total-cal">200</span> kcal</p>
+                    </div>
+                    <button id="reset-btn" class="reset-btn">Újrakezdés</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Burger Bár. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/builder.js"></script>
+</body>
+
+</html>

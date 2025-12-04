@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Bár - Étlap</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../assets/logo-icon.jpg" alt="Burger Bár Logo">
+                Burger Bár
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Kezdőlap</a></li>
+                <li><a href="menu.html" class="active">Étlap</a></li>
+                <li><a href="builder.html">Burger Építő</a></li>
+                <li><a href="about.html">Rólunk</a></li>
+                <li><a href="contact.html">Rendelés & Kapcsolat</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-header">
+            <h1>Étlapunk</h1>
+            <p>Válassz kedvenceink közül!</p>
+        </section>
+
+        <section class="menu-grid">
+            <!-- Menu items will be populated here -->
+            <div class="menu-item">
+                <img src="../assets/classic-burger.png" alt="Klasszikus Sajtburger" class="menu-img">
+                <h3>Klasszikus Sajtburger</h3>
+                <p>100% marhahús, cheddar, saláta, paradicsom, házi szósz.</p>
+                <span class="price">2500 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="../assets/bbq-burger.png" alt="BBQ Bacon Burger" class="menu-img">
+                <h3>Dupla Bacon</h3>
+                <p>Dupla hús, dupla bacon, dupla élvezet.</p>
+                <span class="price">3200 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="../assets/chicken-burger.png" alt="Csirke Burger" class="menu-img">
+                <h3>Csirke Burger</h3>
+                <p>Ropogós csirkemell, majonéz, saláta.</p>
+                <span class="price">2200 Ft</span>
+            </div>
+            <div class="menu-item">
+                <img src="../assets/vega-burger.png" alt="Vega Burger" class="menu-img">
+                <h3>Vega Burger</h3>
+                <p>Grillezett camembert, áfonya lekvár, dió.</p>
+                <span class="price">2800 Ft</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Burger Bár. Minden jog fenntartva.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
