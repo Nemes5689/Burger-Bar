@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Burger Bár oldal betöltve');
     
-    // Mobile menu toggle logic will go here
+    // Mobile menu toggle logic
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
 
