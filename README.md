@@ -1,2 +1,24 @@
 # Burger-Bar
 Beadandó feladat az IT architektúra tantárgyhoz
+Készítette: Nemes Péter Csongor
+
+Oldal URL-je: https://nemes5689.github.io/Burger-Bar/
+
+Téma leírása:
+Ez a weboldal egy fiktív kézműves hamburgerező, a "Burger Bár" online felülete, ahol a látogatók megtekinthetik a kínálatot és rendelést adhatnak le. Az oldal célja, hogy modern, étvágygerjesztő formában mutassa be az ételeket, és lehetőséget biztosítson egyedi burgerek összeállítására is.
+
+Saját JavaScript kód:
+A projekt két fő JavaScript fájlt tartalmaz a `js` mappában és egy :
+1. `validation.js`: Ez a fájl felelős a `pages/contact.html` oldalon található rendelési űrlap validálásáért. Ellenőrzi a kötelező mezőket, az email formátumot, és visszajelzést ad a felhasználónak.
+2. `builder.js`: Ez a fájl a `pages/builder.html` oldalon található "Burger Építő" alkalmazás logikáját tartalmazza. Kezeli a hozzávalók hozzáadását, az ár és a kalória dinamikus számítását, valamint a lista frissítését.
+3. `main.js`: a weboldal ezt a fájlt használja a mobilnézetben látható hamburger menü megnyitására és bezárására, biztosítva ezzel a navigáció működését kisebb képernyőkön is.
+
+Egyedi font:
+A Google Fonts "Outfit" betűtípusát használtam.
+Helye: `https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap`
+
+Külső források:
+- Betűtípus: Google Fonts (Outfit)
+- Ikonok (ha lesznek): FontAwesome (jelenleg CSS alakzatok vagy Unicode karakterek helyettesítik)
+- Képek: Generált képek / Ingyenes stock fotók (Pexels/Unsplash)
+- Ai-al történő kódolásnál gemini és más Ai-ok is használatba voltak véve
